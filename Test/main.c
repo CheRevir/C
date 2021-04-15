@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 #define HELLO_WORLD "Hello World"
 
@@ -6,12 +7,18 @@ void print(int, char *[]);
 void scan();
 
 int main(int argc, char *argv[]){
-	printf("%d\n", HELLO_WORLD);
+	printf("%s\n", HELLO_WORLD);
 
 	print(argc, argv);
 
 	scan();
 
+	char c;
+	fflush(stdout);
+	scanf("%c", &c);
+	printf("%c\n", c);
+
+	system("pause");
 	return 0;
 }
 
@@ -20,7 +27,7 @@ void scan(){
 	printf("%d\n", n);
 	char c;
 	printf("%c\n", c);
-	scanf("%d", &n);
+//	scanf("%d", &n);
 	printf("%d\n", n);
 }
 
