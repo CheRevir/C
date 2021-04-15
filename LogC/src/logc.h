@@ -1,2 +1,2 @@
 
-void println(char c);
+void println(char *c);
